@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Company Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+ #beasiswa h5 {
+  font-size: 20px;
+  color: #333;
+}
+
+.counter {
+  font-size: 32px;
+  font-weight: 700;
+  color: #F47C26;
+  margin-top: 5px;
+}
+.service-wrapper {
+  display: flex;
+  gap: 0; /* TIDAK ADA JARAK */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.service-tabs {
+  width: 260px;
+  background: #f8f8f8;
+  padding: 20px 0;
+  border-right: 2px solid #eee;
+}
+
+.service-tabs .nav-link {
+  border-radius: 0;
+  padding: 14px 22px;
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 4px solid transparent;
+  transition: 0.3s;
+}
+
+.service-tabs .nav-link i {
+  font-size: 18px;
+}
+
+.service-tabs .nav-link.active {
+  background: #fff;
+  color: #F47C26;
+  border-left: 4px solid #F47C26;
+}
+
+.service-content {
+  flex-grow: 1;
+  padding: 30px;
+}
+ .tabs-container {
+    display: flex;
+    gap: 0;                 /* Tidak ada jarak */
+  }
+
+  .tabs-menu {
+    width: 260px;           /* Lebar kiri */
+    border-right: 2px solid #eee;
+  }
+
+  .tabs-menu .nav-link {
+    text-align: left;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 0;
+    color: #444;
+  }
+
+  .tabs-menu .nav-link.active {
+    background-color: #F47C26;
+    color: white;
+  }
+
+  .tabs-content {
+    flex: 1;
+    padding: 20px 25px;
+  }
+</style>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Company
+  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/unja.png" alt="">
+        <h1 class="sitename">SIMAWA UNJA</h1><span style="color:orange">.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li class="dropdown"><a href="about.html"><span>Profil</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="profil.html">Profil Kemahasiswaan dan Alumni</a></li>
+              <li><a href="struktur.html">Struktur Organisasi</a></li>
+              <li><a href="ormawa.html">Organisasi Kemahasiswaan</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="beasiswa.html">Beasiswa</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="berkas.html">Berkas</a></li>
+          <li><a href="#"><button class="btn btn-primary">login</button></a></li>
+          <li>
+            <span class="badge-akreditasi">Akreditasi SIMKATMAWA Tahun 2025 data 2024: <strong>UNGGUL</strong></span>
+        </li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </header>
+
+<main class="main">
+    <!-- Hero Section -->
+  <div class="page-title unja-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Program Bantuan dan Beasiswa Universitas Jambi</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Program Beasiswa dan Bantuan Mahasiswa</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+<!-- ========================= -->
+<section id="beasiswa" style="padding: 60px 0; background:#f7f9fc;">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-4" style="color:#F47C26;">
+      Program Bantuan dan Beasiswa Universitas Jambi
+    </h2>
+
+    <div class="row text-center justify-content-center g-4">
+
+      <!-- 2022 -->
+      <div class="col-6 col-md-2">
+        <h5 class="fw-bold">2022</h5>
+        <div class="counter" data-target="32">0</div>
+        <p class="text-muted">Mahasiswa</p>
+      </div>
+
+      <!-- 2023 -->
+      <div class="col-6 col-md-2">
+        <h5 class="fw-bold">2023</h5>
+        <div class="counter" data-target="412">0</div>
+        <p class="text-muted">Mahasiswa</p>
+      </div>
+
+      <!-- 2024 -->
+      <div class="col-6 col-md-2">
+        <h5 class="fw-bold">2024</h5>
+        <div class="counter" data-target="39">0</div>
+        <p class="text-muted">Mahasiswa</p>
+      </div>
+
+      <!-- 2025 -->
+      <div class="col-6 col-md-2">
+        <h5 class="fw-bold">2025</h5>
+        <div class="counter" data-target="39">0</div>
+        <p class="text-muted">Mahasiswa</p>
+      </div>
+
+      <!-- 2026 -->
+      <div class="col-6 col-md-2">
+        <h5 class="fw-bold">2026</h5>
+        <div class="counter" data-target="39">0</div>
+        <p class="text-muted">Mahasiswa</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= INFORMASI KEMAHASISWAAN ======= -->
+<section id="layanan-kemahasiswaan" style="padding:60px 0;">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-4">
+      <h2 class="fw-bold" style="color:#F47C26;">Informasi Program Bantuan dan Beasiswa Universitas Jambi</h2>
+      <p class="text-muted" style="max-width:700px;margin:auto;">
+        Pilih jenis beasiswa untuk melihat informasi lengkap mengenai persyaratan, manfaat, dan ketentuan lainnya.
+      </p>
+    </div>
+
+    <div class="service-wrapper d-flex" style="gap:0;">
+
+      <!-- LEFT NAV -->
+      <ul class="nav flex-column nav-pills service-tabs" id="v-pills-tab" role="tablist"
+          style="min-width:250px;margin-right:20px;">
+
+        <li class="nav-item">
+          <button class="nav-link active" id="tab-kip" data-bs-toggle="pill" data-bs-target="#content-kip">
+            <i class="bi bi-mortarboard-fill"></i> Beasiswa KIP-Kuliah
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" id="tab-adik" data-bs-toggle="pill" data-bs-target="#content-adik">
+            <i class="bi bi-globe-asia-australia"></i> Beasiswa ADik
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" id="tab-bpi" data-bs-toggle="pill" data-bs-target="#content-bpi">
+            <i class="bi bi-bank2"></i> Beasiswa BPI LPDP
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" id="tab-djarum" data-bs-toggle="pill" data-bs-target="#content-djarum">
+            <i class="bi bi-star"></i> Djarum Foundation
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" id="tab-bi" data-bs-toggle="pill" data-bs-target="#content-bi">
+            <i class="bi bi-cash-coin"></i> Beasiswa Bank Indonesia
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" id="tab-salim" data-bs-toggle="pill" data-bs-target="#content-salim">
+            <i class="bi bi-heart-fill"></i> Beasiswa Yayasan Salim
+          </button>
+        </li>
+
+      </ul>
+
+      <!-- RIGHT CONTENT -->
+      <div class="tab-content service-content flex-grow-1" id="v-pills-tabContent">
+
+        <!-- KIP -->
+        <div class="tab-pane fade show active" id="content-kip">
+          <h4 class="fw-bold mb-3">Beasiswa KIP Kuliah</h4>
+          <p class="text-muted">Beasiswa penuh untuk mahasiswa kurang mampu dengan nilai akademik baik.</p>
+        </div>
+
+        <!-- ADIK -->
+        <div class="tab-pane fade" id="content-adik">
+          <h4 class="fw-bold mb-3">Beasiswa Afirmasi Pendidikan (ADik)</h4>
+          <p class="text-muted">Diperuntukkan bagi mahasiswa dari wilayah 3T, Papua, dan afirmasi khusus.</p>
+        </div>
+
+        <!-- BPI -->
+        <div class="tab-pane fade" id="content-bpi">
+          <h4 class="fw-bold mb-3">Beasiswa Pendidikan Indonesia (BPI - LPDP)</h4>
+          <p class="text-muted">Beasiswa prestisius untuk jenjang sarjana hingga doktoral.</p>
+        </div>
+
+        <!-- DJARUM -->
+        <div class="tab-pane fade" id="content-djarum">
+          <h4 class="fw-bold mb-3">Beasiswa Djarum Foundation</h4>
+          <p class="text-muted">Beasiswa prestasi untuk mahasiswa aktif non-kedokteran.</p>
+        </div>
+
+        <!-- BI -->
+        <div class="tab-pane fade" id="content-bi">
+          <h4 class="fw-bold mb-3">Beasiswa Bank Indonesia</h4>
+          <p class="text-muted">Beasiswa untuk mahasiswa berprestasi tingkat perguruan tinggi.</p>
+        </div>
+
+        <!-- SALIM -->
+        <div class="tab-pane fade" id="content-salim">
+          <h4 class="fw-bold mb-3">Beasiswa Yayasan Salim</h4>
+          <p class="text-muted">Diberikan kepada mahasiswa dengan latar ekonomi rendah.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- Portfolio Section -->
+<!-- ======= PENGUMUMAN KEMAHASISWAAN ======= -->
+<section id="pengumuman" style="padding:50px 0; background:#f9f9f9;">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-4">
+      <h2 class="fw-bold" style="color:#F47C26;">Pengumuman Terbaru</h2>
+      <p class="text-muted" style="max-width:700px;margin:auto;">
+        Informasi terbaru terkait beasiswa, bantuan pendidikan, dan kegiatan kemahasiswaan Universitas Jambi.
+      </p>
+    </div>
+
+    <!-- LIST -->
+    <div class="list-group">
+
+      <!-- ITEM 1 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <i class="bi bi-megaphone-fill text-danger"></i>
+          <strong class="ms-2">Pendaftaran Beasiswa KIP-Kuliah Tahun 2025 Telah Dibuka</strong>
+          <div class="text-muted small">Diterbitkan: 10 Januari 2025</div>
+        </div>
+        <span class="badge bg-primary">Lihat Detail</span>
+      </a>
+
+      <!-- ITEM 2 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <i class="bi bi-info-circle-fill text-primary"></i>
+          <strong class="ms-2">Pengumuman Seleksi Tahap 2 Beasiswa Bank Indonesia</strong>
+          <div class="text-muted small">Diterbitkan: 08 Januari 2025</div>
+        </div>
+        <span class="badge bg-primary">Lihat Detail</span>
+      </a>
+
+      <!-- ITEM 3 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <strong class="ms-2">Pembukaan Pendaftaran Djarum Beasiswa Plus</strong>
+          <div class="text-muted small">Diterbitkan: 02 Januari 2025</div>
+        </div>
+        <span class="badge bg-primary">Lihat Detail</span>
+      </a>
+
+      <!-- ITEM 4 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <i class="bi bi-clipboard2-check-fill text-success"></i>
+          <strong class="ms-2">Pengumuman Verifikasi Berkas ADik 2025</strong>
+          <div class="text-muted small">Diterbitkan: 28 Desember 2024</div>
+        </div>
+        <span class="badge bg-primary">Lihat Detail</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<hr>
+    <!-- Clients Section -->
+<section id="video-simawa" class="section py-5">
+
+  <div class="container section-title text-center" data-aos="fade-up">
+    <!-- <h2 class="fw-bold" style="color:#F47C26;">VIDEO PEMBELAJARAN & PROFIL UNJA</h2>
+    <p class="text-muted">Tonton panduan penggunaan SIMAWA UNJA dan profil resmi Universitas Jambi</p> -->
+  </div>
+
+  <div class="container mt-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+
+      <!-- Video Tata Cara SIMAWA -->
+      <div class="col-lg-6">
+        <div class="video-card">
+          <div class="ratio ratio-16x9 video-wrapper">
+            <iframe src="https://www.youtube.com/embed/DrXUmhy2NCU"
+              title="Tata Cara Penggunaan SIMAWA UNJA"
+              allowfullscreen></iframe>
+          </div>
+          <h5 class="video-title mt-3 text-center">Tata Cara Penggunaan SIMAWA UNJA</h5>
+        </div>
+      </div>
+
+      <!-- Video Profil UNJA -->
+      <div class="col-lg-6">
+        <div class="video-card">
+          <div class="ratio ratio-16x9 video-wrapper">
+            <iframe src="https://www.youtube.com/embed/99dOlMy4mic"
+              title="Profil Universitas Jambi"
+              allowfullscreen></iframe>
+          </div>
+          <h5 class="video-title mt-3 text-center">Video Profil Universitas Jambi</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+</main>
+ <footer id="footer-unja">
+
+  <div class="footer-overlay">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Tentang Kami -->
+        <div class="col-lg-4 col-md-6 footer-box">
+          <h4 class="footer-title">Tentang Kami</h4>
+          <p class="footer-desc">
+            Sistem Informasi Kemahasiswaan (SIMAWA) UNJA merupakan sistem informasi mahasiswa UNJA yang terkoordinir 
+            di bawah lembaga pengembangan kemahasiswaan dan alumni Universitas Jambi yang berfungsi untuk pengelolaan 
+            seluruh kegiatan kemahasiswaan Universitas Jambi.
+          </p>
+
+          <div class="footer-social mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Link Utama -->
+        <div class="col-lg-4 col-md-3 footer-box">
+          <h4 class="footer-title">Link Utama</h4>
+          <ul class="footer-links">
+            <li><a href="#">WEB UNJA</a></li>
+            <li><a href="#">PORTAL GERBANG UNJA</a></li>
+            <li><a href="#">SISTEM INFORMASI AKADEMIK</a></li>
+            <li><a href="#">SKPI</a></li>
+            <li><a href="#">PERPUSTAKAAN</a></li>
+            <li><a href="#">REPOSITORY</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak Kami -->
+        <div class="col-lg-4 col-md-3 footer-box">
+          <h4 class="footer-title">Kontak Kami</h4>
+          <p class="footer-desc">
+            Jl. Raya Jambi – Muara Bulian Km. 15,  
+            Mendalo Indah, Jambi Luar Kota, Jambi 36361
+          </p>
+
+          <p class="footer-desc">
+            <strong>Email:</strong> upatik@unja.ac.id<br>
+            <strong>Senin - Jumat:</strong> 07.00 - 16.00 WIB
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom text-center">
+    © Copyright 2024 | All Rights Reserved by UNIVERSITAS JAMBI
+  </div>
+
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script>
+  // ========================
+  // GRAFIK PRESTASI (BAR)
+  // ========================
+  document.querySelectorAll(".counter").forEach(counter => {
+  let target = +counter.getAttribute("data-target");
+  let count = 0;
+  let speed = 20;
+
+  let updateCounter = () => {
+    if (count < target) {
+      count += Math.ceil(target / 100);
+      counter.innerText = count;
+      setTimeout(updateCounter, speed);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCounter();
+});
+
+</script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
